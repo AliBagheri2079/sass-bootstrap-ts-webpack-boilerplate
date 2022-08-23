@@ -1,14 +1,5 @@
-// Import helpers.
-import { setMessage } from '@/helpers/set-message';
+//* Import Bootstrap and pooper
+import './utils/bootstrap';
 
-/**
- * Will find #root element and set HTML to "Hello World!".
- */
-function editDom(): void {
-  const root = document.getElementById('root'); // Get root element.
-  if (root) {
-    root.innerHTML = `<p>${setMessage()}</p>`; // Set html of the root element.
-  }
-}
-
-editDom(); // Call editDom.
+//* Import main page styles
+import './assets/scss/main.scss';
