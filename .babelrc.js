@@ -17,7 +17,7 @@ module.exports = {
     [
       '@babel/plugin-proposal-private-methods',
       {
-        loose: false,
+        loose: true,
       },
     ],
   ],

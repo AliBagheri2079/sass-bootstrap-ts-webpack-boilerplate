@@ -6,7 +6,6 @@ module.exports = {
   plugins: ['@typescript-eslint', 'prettier'],
   env: {
     es6: true,
-    jest: true,
     node: true,
     browser: true,
   },
@@ -16,7 +15,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:prettier/recommended',
-    'plugin:jest-formatting/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2018,
@@ -29,9 +27,18 @@ module.exports = {
     },
   },
   rules: {
-    indent: ['error', 2, { SwitchCase: 1 }],
-    quotes: ['error', 'single', 'avoid-escape'],
-    'prettier/prettier': ['error', require('./.prettierrc')],
+    // indent: ['error', 2, { SwitchCase: 1 }],
+    // quotes: ['error', 'single', 'avoid-escape'],
+    'prettier/prettier': [
+      'error',
+      { endOfLine: 'auto' },
+      { usePrettierrc: true },
+    ],
+    'import/no-extraneous-dependencies': 'off',
+    'import/prefer-default-export': 'off',
+    'no-confusing-arrow': 'off',
+    'linebreak-style': 'off',
+    'no-plusplus': 'off',
   },
   overrides: [
     {

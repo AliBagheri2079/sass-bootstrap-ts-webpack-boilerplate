@@ -1,0 +1,12 @@
+# Ignore by Default
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# Ignore artifacts
+build
+coverage
+
+# Ignore tsconfig file
+tsconfig.json
