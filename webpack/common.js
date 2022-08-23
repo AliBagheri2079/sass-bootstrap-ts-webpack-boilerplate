@@ -6,12 +6,12 @@ import {
   styleLintWebpackPlugin,
 } from './plugins';
 import { paths, config } from './configuration';
-import { css, fonts, images, javaScript, typeScript } from './modules';
+import { scss, fonts, images, javaScript, typeScript } from './modules';
 
 /**
  * Entry point for the bundle.
  */
-const entry = [`${paths.src}/index.ts`, `${paths.src}/css/styles.css`];
+const entry = [`${paths.src}/index.ts`, `${paths.src}/assets/scss/main.scss`];
 
 /**
  * Set output file name and path.
@@ -36,7 +36,7 @@ const plugins = [
  * Shared modules.
  */
 const modules = {
-  rules: [css, fonts, images, javaScript, typeScript],
+  rules: [scss, fonts, images, javaScript, typeScript],
 };
 
 /**
