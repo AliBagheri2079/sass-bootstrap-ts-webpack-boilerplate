@@ -4,13 +4,15 @@
 
 A starter frontend boilerplate built with:
 
+- [Sass](https://sass.org/)
+- [Bootstrap](https://getbootstrap.com/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Babel (7)](https://babeljs.io/)
-- [Webpack (5)](https://webpack.js.org/)
-- [PostCSS](https://postcss.org/)
-- [Jest](https://jestjs.io/)
+- [Babel](https://babeljs.io/)
+- [Webpack](https://webpack.js.org/)
 - [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 - [Stylelint](https://stylelint.io/)
+- [PurgeCSS](https://purgecss.com/)
 
 This also uses [lint-staged](https://github.com/okonet/lint-staged) for running pre-commit checks.
 
@@ -32,13 +34,12 @@ This also uses [lint-staged](https://github.com/okonet/lint-staged) for running 
 
 ```none
 src
-└── css
-│    ├── all
-│    └── styles.css
+├── assets
+├── components
+└── ...
 ├── index.ts
 public
 ├── assets
-├── favicon.ico
 └── index.html
 ```
 
@@ -46,8 +47,6 @@ public
   - The entry typescript file is [index.ts](src/index.ts).
   - The [helpers/set-message](src/helpers/set-message) folder is a sample folder for how to test using Jest.
   - Local files are imported using the `'@'` alias. See [index.ts](src/index.ts) file for example.
-- scr/css
-  - Add your styles here and `@import` them to the entry [styles.css](src/css/styles.css) file.
 - public
   - Edit the [index.html](public/index.html) in the public folder to suite your needs.
   - Replace the [favicon.ico](public/favicon.ico) with your own icon.
@@ -91,20 +90,6 @@ Run:
 ```
 
 Will output all build files into the `dist` folder.
-
-## Testing (Jest)
-
-Run:
-
-```sh
-  yarn test
-```
-
-or watch files
-
-```sh
-  yarn test:watch
-```
 
 ## Linting
 
